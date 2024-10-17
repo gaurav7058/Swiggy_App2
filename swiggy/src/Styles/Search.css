@@ -1,0 +1,155 @@
+/* Container for the search bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+  }
+  
+  /* Input field styling */
+  .search-input {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 350px;
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #6c63ff;
+  }
+  
+  /* Search button styling */
+  .search-button {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(108, 99, 255, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #4e4ac8;
+    box-shadow: 0 6px 15px rgba(108, 99, 255, 0.4);
+  }
+  
+  /* Centering the results container */
+  .results-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns per row */
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px; /* Limit max width for proper alignment */
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Individual result card styling */
+  .result-card {
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+  }
+  
+  .result-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Restaurant name */
+  .result-card .restaurant-info {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  /* Image styling */
+  .result-image {
+    width: 100px;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  /* Name styling */
+  .result-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  /* Price styling */
+  .result-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Description and other details */
+  .result-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  /* Button container for the Add button */
+  .add-button-container {
+    text-align: center;
+  }
+  
+  .add-button {
+    background-color: #00a676;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .add-button:hover {
+    background-color: #008d5e;
+  }
+  
+  /* Customisable text */
+  .customisable {
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  /* More Details button */
+  .more-details-btn {
+    background-color: transparent;
+    color: #00a676;
+    border: 1px solid #00a676;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .more-details-btn:hover {
+    background-color: #00a676;
+    color: white;
+  }
+  

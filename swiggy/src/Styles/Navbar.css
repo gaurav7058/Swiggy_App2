@@ -1,0 +1,95 @@
+.navbar {
+    background-color: orange; /* Do not change the logic; style it to be responsive */
+    height: 50px;
+    display: flex;
+    justify-content: space-between; /* Space out items correctly */
+    align-items: center;
+    padding: 0 20px; 
+    position: sticky;
+    top: 0;
+}
+.logo-brand{
+    display: flex;
+    align-items: center;
+}
+.logo-brand p{
+    font-size: 27px;
+}
+.navbar a {
+    text-decoration: none;
+    color: white; /* Ensure the links are visible on the orange background */
+    padding: 10px 15px; /* Add padding for clickable area */
+    font-size: 18px;
+}
+
+.navbar-links {
+    display: flex; /* Use flexbox for layout */
+    gap: 15px; /* Add gap between links */
+}
+
+.navbar img {
+    width: 76px;
+    height: 42px;
+}
+/* .card{
+    font-size: 27px;
+} */
+.button-style {
+    background-color: #f68b1e; /* Swiggy-like orange */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .button-style:hover {
+    background-color: #ff944d;
+  }
+  
+  .cardData-length {
+    background-color: white;
+    color: #f68b1e;
+    padding: 2px 8px;
+    border-radius: 50%;
+    margin-left: 5px;
+    font-weight: bold;
+  }
+  
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column; /* Stack items on smaller screens */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .navbar-links {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center links */
+        display: none; /* Hide links by default */
+        position: absolute; /* Position it under the navbar */
+        background-color: orange; /* Ensure it matches the navbar */
+        width: 100%; /* Full width */
+        top: 50px; /* Below the navbar */
+        left: 0; /* Align to the left */
+    }
+
+    .navbar-links.active {
+        display: flex; /* Show links when active */
+    }
+
+    .menu-button {
+        background: none; /* No background */
+        border: none; /* No border */
+        color: white; /* Color for the button */
+        font-size: 24px; /* Font size for the icon */
+        cursor: pointer; /* Pointer on hover */
+        display: block; /* Show button in mobile view */
+    }
+}

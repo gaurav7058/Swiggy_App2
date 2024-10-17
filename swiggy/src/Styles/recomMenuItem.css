@@ -1,0 +1,79 @@
+.menu-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns in a row */
+  gap: 20px; /* Space between items */
+  padding: 20px; /* Padding around the grid */
+}
+
+.menu-item-card {
+  border: 1px solid #ccc; /* Light border for cards */
+  padding: 12px; /* Padding inside cards */
+  margin: 12px; /* Margin around cards */
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Arrange children vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s ease; /* Smooth scaling on hover */
+}
+
+/* .menu-item-card:hover {
+  transform: scale(1.03); 
+} */
+
+.menu-item-image {
+  width: 40%; /* Responsive image width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 12px; /* Rounded corners */
+  margin-bottom: 15px; /* Space below the image */
+}
+
+.menu-item-details {
+  margin-top: 15px; /* Space above details */
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Arrange details vertically */
+  align-items: center; /* Center horizontally */
+}
+
+.menu-item-name {
+  font-size: 1.2em; /* Font size for item name */
+  font-weight: bold; /* Bold font */
+  margin-bottom: 5px; /* Space below name */
+  color: #333; /* Dark text color */
+}
+
+.menu-item-description {
+  color: #666; /* Gray text color */
+  font-size: 0.9em; /* Smaller font size */
+  margin-bottom: 5px; /* Space below description */
+}
+
+.menu-item-price {
+  font-size: 1em; /* Price font size */
+  font-weight: bold; /* Bold font */
+  color: #ff5722; /* Price color */
+}
+
+.item-count-buttons {
+  display: flex; /* Use flexbox for button alignment */
+  gap: 10px; /* Space between buttons */
+  margin-top: 15px; /* Space above buttons */
+}
+
+.plus-button,
+.minus-button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px; /* Padding for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1.2em; /* Font size for buttons */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.plus-button:hover,
+.minus-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}

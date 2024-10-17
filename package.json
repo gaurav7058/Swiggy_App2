@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "20": "^3.1.9",
+    "nvm": "^0.0.4",
+    "react-responsive-carousel": "^3.2.23",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1"
+  }
+}
