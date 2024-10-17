@@ -43,9 +43,9 @@ export default function Cards() {
         })
       }
 
-        <button onClick={()=>{
+        {cardsData.length>0 && <button onClick={()=>{
             navigate("/cheakout")
-        }}>Cheak out</button>
+        }}>Cheak out</button>}
     </div>
       </>
   );
